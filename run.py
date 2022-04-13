@@ -12,8 +12,17 @@ SCOPED_CREDS = CREDS.with_scopes(SCOPE)
 GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("Jordan_palace")
 
-sales = SHEET.worksheet("monthly_sales")
+def get_sales_data():
+    """
+    Request sales figures input from user. 
+    """
+    print("Please enter sales data, for each trainer, from the last month.")
+    print("Data should be five numbers, seperated by commas.")
+    print("Example: 1,2,3,4,5\n")
 
-data = sales.get_all_values()
+    data_str = input("Enter your data here: ")
+    print(f"The data provided is {data_str}")
 
-print(data)
+get_sales_data()
+
+

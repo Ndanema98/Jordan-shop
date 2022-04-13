@@ -17,16 +17,22 @@ def get_sales_data():
     """
     Request input of trainer name and sales figures for the year from user.
     """
-    print("Please enter trainer name")
-    name_str = input("Enter the name here: ")
-    print(f"The name provided is {name_str}\n")
-    print("Please enter sales figures for the year.")
-    print("Data should be twelve numbers, seperated by commas.")
-    print("Example: 1,2,3,4,5,6,7,8,9,10,11,12\n")
+    while True:
+        print("Please enter trainer name")
+        name_str = input("Enter the name here: ")
+        print(f"The name provided is {name_str}\n")
+        print("Please enter sales figures for the year.")
+        print("Data should be twelve numbers, seperated by commas.")
+        print("Example: 1,2,3,4,5,6,7,8,9,10,11,12\n")
 
-    data_str = input("Enter your data here: ")
-    sales_data = data_str.split(",")
-    validate_data(sales_data)
+        data_str = input("Enter your data here: ")
+        sales_data = data_str.split(",")
+
+        if validate_data(sales_data): 
+            print("Data is valid!")
+            break
+
+        
 
 
 def validate_data(values):
@@ -43,6 +49,9 @@ def validate_data(values):
             )
     except ValueError as e:
         print(f"Invalid data: {e}, please try again.\n")
+        return False
+    
+    return True
 
 
 get_sales_data()

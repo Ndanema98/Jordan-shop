@@ -14,6 +14,13 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("Jordan_palace")
 
 
+def add_new_sales_data():
+    print("Do you want to add new yearly sales figures for a shoe?")
+    print("Please respond with a 'y' for yes or 'n' for no.\n")
+    add_new_str = input("Enter response here: ")
+    
+
+
 def get_sales_data():
     """
     Request input of trainer name and sales figures for the year from user.
@@ -40,7 +47,7 @@ def validate_data(values):
     """
     Converts string values into integers.
     Raises value error if string values can not be converted into integers,
-    or if there are not exactly 12 values. 
+    or if there are not exactly 12 values.
     """
     try:
         [int(value) for value in values]
@@ -65,8 +72,26 @@ def update_sales_worksheet(data):
     print("Sales worksheet updated successfully.\n")
 
 
-data = get_sales_data()
-sales_data = [int(num) for num in data]
-update_sales_worksheet(sales_data)
+def month_most_sales():
+    print("hi")
 
 
+def average_amount_sold():
+    print("hello")
+
+
+def shoe_sold_most():
+    print("bye")
+
+
+def main():
+    add_new_sales_data()
+    data = get_sales_data()
+    sales_data = [int(num) for num in data]
+    update_sales_worksheet(sales_data)
+    month_most_sales()
+    average_amount_sold()
+    shoe_sold_most()
+
+
+main()

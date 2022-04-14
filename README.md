@@ -1,11 +1,13 @@
 # Milestone project 3
-# 
+# Jordan Store Survey Data Analysis
 
-["General Knowledge Online Quiz"](https://ndanema98.github.io/Online-quiz/) is a website designed to entertain and quiz people of all ages on thier general knowledge.  
+["General Knowledge Online Quiz"](https://ndanema98.github.io/Online-quiz/) is a website designed to entertain and quiz people of all ages on thier general knowledge. 
 
 
-This website was built using knowledge gained from HTML, CSS and JavaScript modules, for the purpose of completing my second Milestone Project for the Code Institute's full stack developer course. This website is easy to navigate and easy to read, with a clear goal and aim. 
-s
+
+This programme was built using knowledge gained from Python modules, for the purpose of completing my third Milestone Project for the Code Institute's full stack developer course. This programme is easy to navigate and easy to read, with a clear goal and aim. 
+
+
  # User Experience/User Interface (UX/UI)
 
  - ## User Stories
@@ -21,39 +23,11 @@ s
    
  
  - ## Design 
-   ### Colour Scheme
-   
-
-   ### Typography
-   
-
    ### Wireframes
    
 
  # Features
- - ## Responsive Website
-   
 
- - ## Instruction Page
-   
-
- - ## Start Button
-   
-
- - ## Next Button 
-   
-
- - ## Restart Button 
-    
-
- - ## Timer 
-    
-
- - ## Score Area
-    
- 
- - ## Game Area
-   
 
  - ## Possible Future Features
    
@@ -63,13 +37,8 @@ s
    
 
  - ## Validator 
-   - ### HTML
-     
 
-   - ### CSS 
-     
-
-   - ### Javascript
+   - ### Python
      
 
   - ## Accessibility 
@@ -96,12 +65,8 @@ s
      - Used to display icons to make my website more visually appealing. 
    - Chrome developer tools 
      - Allowed me to troubleshoot and edit my code.
-   - Am I Responsive 
-     - Allowed me to check the responsiveness of my website at different screen sizes. 
-   - W3C Validator 
-     - Allowed me to validate my HTML and CSS code against industry standard. 
-   - JSHint 
-     - Allowed me to validate my Javascript code against industry standard. 
+   
+  
 
  # Deployment
   - ## Remote 
@@ -125,9 +90,6 @@ s
    7. Lastly press enter and your clone will be created. 
 
  # Credits
- - ## Images
-   
-
  - ## Code
    
 

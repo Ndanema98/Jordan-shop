@@ -3,6 +3,10 @@
 
 ["General Knowledge Online Quiz"](https://ndanema98.github.io/Online-quiz/) is a website designed to entertain and quiz people of all ages on thier general knowledge. 
 
+This programme was built for a company which sells Jordan trainers. 
+The timer section will have a countdown of 30 seconds, to put some urgency on the users answering the questions. There will also be a score section so that users are able to see how well they've done. This will give them the incentive to keep playing again in hopes of beating their high scores.
+
+Quizes have been shown to greatly help develop key skills. Attention, focus and concentration are improved by games such as this. Also users can greatly benefit from exercising and utilising their brains, and any activity which encourages mental activity maintains and can improve mental function.
 
 
 This programme was built using knowledge gained from Python modules, for the purpose of completing my third Milestone Project for the Code Institute's full stack developer course. This programme is easy to navigate and easy to read, with a clear goal and aim. 

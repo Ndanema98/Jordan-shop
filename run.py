@@ -14,11 +14,24 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("Jordan_palace")
 
 
+
 def add_new_sales_data():
+    """
+    Asks the user whether they want to add new shoe data.
+    """
+
     print("Do you want to add new yearly sales figures for a shoe?")
     print("Please respond with a 'y' for yes or 'n' for no.\n")
     add_new_str = input("Enter response here: ")
+    return add_new_str
     
+
+if add_new_sales_data() == "y":
+    print("true")
+elif add_new_sales_data() == "n":
+    print("false")
+else:
+    print("no way")
 
 
 def get_sales_data():
@@ -40,8 +53,8 @@ def get_sales_data():
             print("Data is valid!")
             break
 
-    return sales_data 
-       
+    return sales_data
+
 
 def validate_data(values):
     """
@@ -85,7 +98,6 @@ def shoe_sold_most():
 
 
 def main():
-    add_new_sales_data()
     data = get_sales_data()
     sales_data = [int(num) for num in data]
     update_sales_worksheet(sales_data)

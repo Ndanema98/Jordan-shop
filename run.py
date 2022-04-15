@@ -42,6 +42,7 @@ def get_sales_data():
         print("Please enter trainer name")
         name_str = input("Enter the name here: ")
         print(f"The name provided is {name_str}\n")
+
         print("Please enter sales figures for the year.")
         print("Data should be twelve numbers, seperated by commas.")
         print("Example: 1,2,3,4,5,6,7,8,9,10,11,12\n")

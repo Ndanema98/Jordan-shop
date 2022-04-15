@@ -1,33 +1,35 @@
 # Milestone project 3
 # Jordan Store Survey Data Analysis
 
-["General Knowledge Online Quiz"](https://ndanema98.github.io/Online-quiz/) is a website designed to entertain and quiz people of all ages on thier general knowledge. 
+["Jordan Store Survey Data Analysis"]() is a programme designed to manage the data of a shoe store.
 
-This programme was built for a company which sells Jordan trainers. 
-The timer section will have a countdown of 30 seconds, to put some urgency on the users answering the questions. There will also be a score section so that users are able to see how well they've done. This will give them the incentive to keep playing again in hopes of beating their high scores.
+This programme was built for a company which sells Jordan trainers. It will allow the user to input the monthly sales data of a specific trainer and add it to a google spreadsheet. The programme will also provide the user with data such as the month that sold the most shoes, the average amount of shoes sold in a particular month and the shoe that sold the most. Different validation 
+methods are also present throughtout this programme to check whether the data being inputted is valid.
 
-Quizes have been shown to greatly help develop key skills. Attention, focus and concentration are improved by games such as this. Also users can greatly benefit from exercising and utilising their brains, and any activity which encourages mental activity maintains and can improve mental function.
-
+Spreadsheets are a great way to store data for companies because it allows them to organise and perform calculations on the data. This enables them to make important predictions and decisions, which on a whole willb benefit them. 
 
 This programme was built using knowledge gained from Python modules, for the purpose of completing my third Milestone Project for the Code Institute's full stack developer course. This programme is easy to navigate and easy to read, with a clear goal and aim. 
-
 
  # User Experience/User Interface (UX/UI)
 
  - ## User Stories
    ### First Time User Goals
-   
+   As a first time user I want: 
    
    ### Frequent User Goals
    As a frequent user I want:
    
-
    ### Developer's Goals.
    As the developer I want:
    
  
  - ## Design 
+   ### Flowchart
+   ![A screenshot of my flowchart](/assets/flowchart.jpeg)
+
    ### Wireframes
+
+   
    
 
  # Features
@@ -77,7 +79,7 @@ This programme was built using knowledge gained from Python modules, for the pur
    1. Click on the settings icon in the navigation bar.
    2. Scoll until Github pages is visable.
    3. Once clicked change the branch to "main" and change the directory to "root". 
-   4. Next, click the save button. 
+   4. Next, click the save button.  
    5. It may take a few moments for the website to publish but once its done, a link to the live website will be provided. 
 
   - ## Forking

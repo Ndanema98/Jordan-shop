@@ -1,4 +1,5 @@
 import gspread
+import pandas as pd
 
 from google.oauth2.service_account import Credentials
 
@@ -14,7 +15,6 @@ GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("Jordan_palace")
 
 
-
 def add_new_sales_data():
     """
     Asks the user whether they want to add new shoe data.
@@ -22,16 +22,18 @@ def add_new_sales_data():
 
     print("Do you want to add new yearly sales figures for a shoe?")
     print("Please respond with a 'y' for yes or 'n' for no.\n")
-    add_new_str = input("Enter response here: ")
-    return add_new_str
-    
+    add_new_string = input("Enter response here: ")
+    add_new_str = add_new_string.lower()
+    add_new(add_new_str)
 
-if add_new_sales_data() == "y":
-    print("true")
-elif add_new_sales_data() == "n":
-    print("false")
-else:
-    print("no way")
+
+def add_new(add_new_str):
+    if add_new_str == "y":
+        print("true")
+    elif add_new_str == "n":
+        print("false")
+    else:
+        print("no way")
 
 
 def get_sales_data():
@@ -82,7 +84,7 @@ def update_sales_worksheet(data):
     """
     print("Updating sales worksheet...\n")
     sales_worksheet = SHEET.worksheet("monthly_sales")
-    sales_worksheet.update('G2:G13')
+    sales_worksheet.append(data)
     print("Sales worksheet updated successfully.\n")
 
 
@@ -99,6 +101,7 @@ def shoe_sold_most():
 
 
 def main():
+    add_new_sales_data()
     data = get_sales_data()
     sales_data = [int(num) for num in data]
     update_sales_worksheet(sales_data)

@@ -1,5 +1,6 @@
 import gspread
 import pandas as pd
+from gspread_pandas import Spread
 
 from google.oauth2.service_account import Credentials
 
@@ -30,8 +31,12 @@ def add_new_sales_data():
 def add_new(add_new_str):
     if add_new_str == "y":
         print("true")
+        data = get_sales_data()
+        sales_data = [int(num) for num in data]
+        update_sales_worksheet(sales_data)
     elif add_new_str == "n":
         print("false")
+        month_most_sales()
     else:
         print("no way")
 
@@ -49,7 +54,7 @@ def get_sales_data():
         print("Data should be twelve numbers, seperated by commas.")
         print("Example: 1,2,3,4,5,6,7,8,9,10,11,12\n")
 
-        data_str = input("Enter your data here: ")
+        data_str = input("Enter your data here:/n ")
         sales_data = data_str.split(",")
 
         if validate_data(sales_data):

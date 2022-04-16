@@ -15,13 +15,21 @@ This programme was built using knowledge gained from Python modules, for the pur
  - ## User Stories
    ### First Time User Goals
    As a first time user I want: 
-   
+   - To be able to understand the aim of the programme and how it works. 
+   - To be able to use the programme in relation to my business. 
+   - The programme to function correctly. 
+
    ### Frequent User Goals
    As a frequent user I want:
-   
+   - The programme to be fluent and easy to use. 
+   - The programme to positively affect my business.
+   - The programme to function correctly. 
+
    ### Developer's Goals.
    As the developer I want:
-   
+   - To provide a useful programme that fufills it's aims. 
+   - 
+   - 
  
  - ## Design 
    ### Flowchart

@@ -85,11 +85,11 @@ def validate_data(values):
 
 def update_sales_worksheet(data):
     """
-    Update sales worksheet. Add new column with the list data provided. 
+    Update sales worksheet. Add new column with the list data provided.
     """
     print("Updating sales worksheet...\n")
     sales_worksheet = SHEET.worksheet("monthly_sales")
-    sales_worksheet.append(data)
+    sales_worksheet.append_row(data)
     print("Sales worksheet updated successfully.\n")
 
 

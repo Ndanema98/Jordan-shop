@@ -1,8 +1,8 @@
-import gspread
+import gspread as gs
 import pandas as pd
 from gspread_pandas import Spread
-
 from google.oauth2.service_account import Credentials
+
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -12,8 +12,10 @@ SCOPE = [
 
 CREDS = Credentials.from_service_account_file("creds.json")
 SCOPED_CREDS = CREDS.with_scopes(SCOPE)
-GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+GSPREAD_CLIENT = gs.authorize(SCOPED_CREDS)
 SHEET = GSPREAD_CLIENT.open("Jordan_palace")
+gc = gs.service_account("creds.json")
+sh = gc.open("Jordan_palace")
 
 
 def add_new_sales_data():
